@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Forms</title>
+</head>
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+
+        <!-- User name  type="text"-->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="username" required>
+        </div>
+
+        <!-- password type="password" -->
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- email  type="email"-->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <!-- age type="number" and Min/Max attributes using, step attribute using number increment by 2 -->
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="110" step="2">
+        </div>
+
+        <!-- date Of Birth type="date"-->
+        <div>
+            <label for="date">Date Of Birth</label>
+            <input type="date" name="date" id="date" min="2019-06-01">
+        </div>
+
+        <!--   checkbox type="checkbox"-->
+        <div>
+            favourite Food
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana">
+            </div>
+            <div>
+                <label for="apple">Apple</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+        </div>
+        <!-- radio type="radio" name="gender" value="male/female" -->
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+        </div>
+
+        <!-- select Box -->
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor">
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+            </select>
+        </div>
+
+        <!-- textarea -->
+        <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="40" rows="10"></textarea>
+        </div>
+
+        <!-- hidden input -->
+        <input type="hidden" name="hidden" id="hidden" value="hai">
+
+        <!-- file choosen type="file" [form new attribute adding enctype="multipart/form-data"]-->
+        <div>
+            <label for="file">File Choose</label>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <!-- phone number type="tel" -->
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+
+        <!-- url type="url" -->
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+
+        <!-- color type="color" -->
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+        </div>
+
+        <!-- resest form type="reset" -->
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
